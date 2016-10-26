@@ -1,0 +1,9 @@
+<div class="weather-bar">
+  <div class="weather-bar-container row">
+    <div class="col-sm-3 col-xs-4 col-lg-2" *ngFor="let w of weatherPackage.list">
+      <div class="weather-widget-border">
+        <app-weather-widget [weather]="w" [tempUnit]="tempUnit"></app-weather-widget>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<div class="weather main-body" [style.height]="_deviceInfoService.contentHeight + 'px'">
+  <div class="weather-container" [style.height]="_deviceInfoService.contentHeight + 'px'">
+    <div class="row" *ngIf="weather.main">
+      <div class="col-sm-6 col-xs-12 center weather-item-main-container">
+        <div class="weather-item weather-item-main" [ngClass]="weatherBg">
+        <div class="cover-container" [ngClass]="{'cover-container-dark': !daytime}">
+          <div class="city">{{currentCity}}</div>
+          <div class="date">{{day[date.getDay()]}}, {{date.getDate()}} {{month[date.getMonth()]}} </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <img class="weather-icon" [src]="weatherIconUrl">
+            </div>
+            <div class="col-sm-8 col-xs-12 weather-temp" (click)="changeTempUnit()">
+              <span>{{weather.main.temp}}</span>
+              <span *ngIf="tempUnit==='metric'">°C</span>
+              <span *ngIf="tempUnit==='imperial'">°F</span>
+            </div>
+          </div>
+          <div class="weather-summary">
+            {{weather.weather[0].description}}
+          </div>
+          <div class="weather-temp-range row">
+            <div class="col-xs-6">
+              <span>Min: {{weather.main.temp_min}}</span>
+              <span *ngIf="tempUnit==='metric'">°C</span>
+              <span *ngIf="tempUnit==='imperial'">°F</span>
+            </div>
+              <div class="col-xs-6">
+                <span>Max: {{weather.main.temp_max}}</span>
+                <span *ngIf="tempUnit==='metric'">°C</span>
+                <span *ngIf="tempUnit==='imperial'">°F</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-6 col-xs-12 center weather-addition">
+        <div class="weather-addition-item">
+          <span>Wind: </span>
+          <span class="right">
+            <span>{{weather.wind.speed}}</span>
+            <span *ngIf="tempUnit==='metric'"> meter/sec</span>
+            <span *ngIf="tempUnit==='imperial'"> miles/hour</span>
+          </span>
+          <span class="clear"></span>
+        </div>
+        <div class="weather-addition-item">
+          <span>Cloudiness: </span>
+          <span class="right">{{weather.clouds.all}}%</span>
+          <span class="clear"></span>
+        </div>
+        <div class="weather-addition-item">
+          <span>Humidity: </span>
+          <span class="right">{{weather.main.humidity}}%</span>
+          <span class="clear"></span>
+        </div>
+        <div class="weather-addition-item">
+          <span>Pressure: </span>
+          <span class="right">{{weather.main.pressure}} hPa</span>
+          <span class="clear"></span>
+        </div>
+        <div class="weather-addition-item">
+          <div class="search-bar row">
+            <div class="col-sm-9 col-xs-12">
+              <div class="row search-bar-seletion">
+                <div class="col-xs-12">
+                  <select [(ngModel)]="country" (ngModelChange)="countryChange()" class="selectpicker" data-style="btn-primary">
+                    <option value="ca">Canada</option>
+                    <option value="us">US</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row search-bar-seletion" *ngIf="cityList[country]">
+                <div class="col-xs-12">
+                  <select [(ngModel)]="city" class="selectpicker" data-style="btn-primary">
+                    <option *ngFor="let c of cityList[country]" [value]="c.city">{{c.city}}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <button class="btn btn-primary" (click)="search()">Go</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear white-space"></div>
+    <div class="future-weather-title">{{currentCity}} {{futureWeatherTitle}}</div>
+    <app-weather-bar *ngIf="futureWeather" [weatherPackage]="futureWeather" [tempUnit]="tempUnit"></app-weather-bar>
+  </div>
+</div>

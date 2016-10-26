@@ -1,0 +1,30 @@
+.weather-widget {
+  width: 100%;
+  margin: 50px 0;
+}
+.weather-widget-container {
+  background-color: rgba(0, 132, 255, 0.6);
+  border: 2px solid #888888;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.weather-widget-container:hover {
+  background-color: rgba(0, 132, 255, 0.8);
+  color: #F3F3F3;
+}
+.weather-widget-time {
+  margin: 15px 0;
+}
+.weather-widget-temp {
+  margin: 25px 0;
+  font-size: 30px;
+}
+.weather-widget-weather {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.weather-widget-description {
+  margin: 15px 0;
+}

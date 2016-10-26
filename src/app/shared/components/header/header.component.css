@@ -1,0 +1,26 @@
+.header-top {
+  padding: 10px;
+  width: 100%;
+  background-color: #0084ff;
+  color: #EEEEEE;
+  font-family: "arial", Georgia, Serif;
+  font-size: 1.4em;
+  /*font-family: 'longhai';*/
+  font-weight: bolder;
+}
+
+.header-top-content{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header-top-left {
+  display: inline;
+  padding-left: 40px;
+}
+
+.header-top-right {
+  float: right;
+  width: 40%;
+  min-width: 320px;
+}

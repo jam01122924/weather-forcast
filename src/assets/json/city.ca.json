@@ -1,0 +1,24 @@
+{
+  "data": [
+    {"city": "Vancouver", "country": "CA"},
+    {"city": "Burnaby", "country": "CA"},
+    {"city": "Coquitlam", "country": "CA"},
+    {"city": "Surrey", "country": "CA"},
+    {"city": "Abbotsford", "country": "CA"},
+    {"city": "Kamloops", "country": "CA"},
+    {"city": "Kelowna", "country": "CA"},
+    {"city": "Banff", "country": "CA"},
+    {"city": "Calgary", "country": "CA"},
+    {"city": "Edmonton", "country": "CA"},
+    {"city": "Regina", "country": "CA"},
+    {"city": "Winnipeg", "country": "CA"},
+    {"city": "Thunder Bay", "country": "CA"},
+    {"city": "Toronto", "country": "CA"},
+    {"city": "Mississauga", "country": "CA"},
+    {"city": "Hamilton", "country": "CA"},
+    {"city": "Vancouver", "country": "CA"},
+    {"city": "Ottawa", "country": "CA"},
+    {"city": "Montreal", "country": "CA"},
+    {"city": "Québec", "country": "CA"}
+  ]
+}

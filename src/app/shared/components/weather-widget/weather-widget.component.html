@@ -1,0 +1,18 @@
+<div class="weather-widget">
+  <div class="weather-widget-container">
+    <div class="weather-widget-time">
+      {{weather.dt_txt}}
+    </div>
+    <div class="weather-widget-temp">
+      {{weather.main.temp}}
+      <span *ngIf="tempUnit==='metric'">°C</span>
+      <span *ngIf="tempUnit==='imperial'">°F</span>
+    </div>
+    <div class="weather-widget-weather">
+      <img [src]="'http://openweathermap.org/img/w/' + weather.weather[0].icon + '.png'">
+    </div>
+    <div class="weather-widget-description">
+      {{weather.weather[0].description}}
+    </div>
+  </div>
+</div>

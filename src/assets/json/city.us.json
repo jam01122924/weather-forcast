@@ -1,0 +1,26 @@
+{
+  "data": [
+    {"city": "Seattle", "country": "US"},
+    {"city": "Portland", "country": "US"},
+    {"city": "San Francisco", "country": "US"},
+    {"city": "Carson City", "country": "US"},
+    {"city": "Sacramento", "country": "US"},
+    {"city": "Nampa", "country": "US"},
+    {"city": "Los Angeles", "country": "US"},
+    {"city": "San Diego", "country": "US"},
+    {"city": "Las Vegas", "country": "US"},
+    {"city": "Phoenix", "country": "US"},
+    {"city": "Tucson", "country": "US"},
+    {"city": "Salt Lake City", "country": "US"},
+    {"city": "Denver", "country": "US"},
+    {"city": "Dallas", "country": "US"},
+    {"city": "Houston", "country": "US"},
+    {"city": "Atlanta", "country": "US"},
+    {"city": "Miami", "country": "US"},
+    {"city": "Detroit", "country": "US"},
+    {"city": "Washington", "country": "US"},
+    {"city": "New York", "country": "US"},
+    {"city": "Boston", "country": "US"},
+    {"city": "Philadelphia", "country": "US"}
+  ]
+}

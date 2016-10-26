@@ -1,0 +1,35 @@
+.top-menu {
+  background-color: #333333;
+  width: 100%;
+}
+.top-menu-content {
+  max-width: 1280px;
+  margin: auto;
+  color: #E0E0E0;
+}
+.top-menu-title {
+  padding: 12px 20px 5px 40px;
+  font-size: 2.6em;
+  font-weight: bolder;
+  display: inline-block;
+}
+.top-menu-menu {
+  display: inline-block;
+  text-align: right;
+  padding: 0 15px;
+  cursor: pointer;
+  padding-top: 20px;
+}
+.top-menu-menu-item {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.top-menu-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.top-menu-menu-item-text {
+}

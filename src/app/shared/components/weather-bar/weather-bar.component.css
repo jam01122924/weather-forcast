@@ -1,0 +1,13 @@
+.weather-bar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  height: 350px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  }
+
+.weather-bar::-webkit-scrollbar {
+  display: none;
+}

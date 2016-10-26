@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,
+cite,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,input,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* body */
+body {
+  background-image: url('assets/img/bg-cloud.jpg');
+  background-repeat: both;
+}
+/* class used to clear float*/
+.clear {
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+.inline {
+  display: inline-block;
+}
+.main-body {
+  background-color: rgba(0, 0, 10, 0.8);
+  color: #CCCCCC;
+}
