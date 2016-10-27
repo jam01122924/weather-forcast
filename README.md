@@ -3,7 +3,7 @@
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 
 ## Environment setup
-Firstly, you will need to install [NPM](https://nodejs.org/) in order to make it work.  
+Firstly, you will need to install [NPM](https://nodejs.org/) and [Git](https://git-scm.com/) in order to make it work.  
 
 Once you have installed NPM, all you will have to do is run the following commands:
 `npm install`
