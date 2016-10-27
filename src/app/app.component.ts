@@ -1,8 +1,7 @@
 
-import { NgModule, Component, OnInit, ViewContainerRef } from '@angular/core';
-import { RouterModule , Routes, RouterOutlet } from '@angular/router';
+import { NgModule, Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { ViewEncapsulation } from '@angular/core';
 
 import { WeatherComponent } from './ui/weather/weather.component';
 

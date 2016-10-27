@@ -3,8 +3,8 @@
     <div class="top-menu-title col-sm-6 col-xs-12">{{title}}</div>
     <div class="top-menu-menu col-sm-6 col-xs-12">
       <div class="row">
-        <span class="top-menu-menu-item col-md-3 col-sm-4 col-xs-12" *ngFor="let menu of menus">
-          <div class="top-menu-menu-item-text" routerLink="{{menu.url}}" *ngIf="menu.child&&menu.child.length">
+        <span class="top-menu-menu-item col-md-3 col-sm-4 col-xs-12" routerLink="{{menu.url}}" *ngFor="let menu of menus">
+          <div class="top-menu-menu-item-text" *ngIf="menu.child&&menu.child.length">
             {{menu.name}}
           </div>
           <div class="top-menu-menu-item-text" routerLink="{{menu.url}}" *ngIf="menu.child&&menu.child.length==0">{{menu.name}}</div>

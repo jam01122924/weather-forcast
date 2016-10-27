@@ -2,8 +2,9 @@
   background-color: #333333;
   width: 100%;
   border-top: 1px solid #888888;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  z-index:5;
 }
 .footer-content {
   max-width: 1280px;

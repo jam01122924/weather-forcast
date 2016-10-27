@@ -1,0 +1,44 @@
+{
+   "coord":{
+      "lon":-122.75,
+      "lat":49.28
+   },
+   "weather":[
+      {
+         "id":500,
+         "main":"Rain",
+         "description":"light rain",
+         "icon":"10n"
+      }
+   ],
+   "base":"stations",
+   "main":{
+      "temp":10.8,
+      "pressure":1002.12,
+      "humidity":98,
+      "temp_min":10.8,
+      "temp_max":10.8,
+      "sea_level":1020.58,
+      "grnd_level":1002.12
+   },
+   "wind":{
+      "speed":5.06,
+      "deg":132.501
+   },
+   "rain":{
+      "3h":1.695
+   },
+   "clouds":{
+      "all":92
+   },
+   "dt":1477563735,
+   "sys":{
+      "message":0.1875,
+      "country":"CA",
+      "sunrise":1477579955,
+      "sunset":1477616170
+   },
+   "id":5927689,
+   "name":"Coquitlam",
+   "cod":200
+}

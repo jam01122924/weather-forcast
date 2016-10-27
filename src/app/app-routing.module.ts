@@ -2,12 +2,14 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { WeatherComponent }   from './ui/weather/weather.component';
-import { ContactUsComponent }   from './ui/contact-us/contact-us.component';
+import { IntroComponent }   from './ui/intro/intro.component';
+import { FeatureComponent }   from './ui/feature/feature.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/weather', pathMatch: 'full' },
   { path: 'weather',  component: WeatherComponent },
-  { path: 'contact-us',  component: ContactUsComponent }
+  { path: 'feature',  component: FeatureComponent },
+  { path: 'intro',  component: IntroComponent }
 ];
 
 @NgModule({

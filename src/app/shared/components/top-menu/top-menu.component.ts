@@ -6,21 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-menu.component.css']
 })
 export class TopMenuComponent implements OnInit {
-  title: string = "Weather Focast"
-  menus: any[] = [
+  public title: string = 'Weather Focast';
+  public menus: any[] = [
       {
-        name: "Weather",
-        url: "/weather",
+        name: 'Weather',
+        url: '/weather',
         child: []
       },
       {
-        name: "Intro",
-        url: "/intro",
+        name: 'Feature',
+        url: '/feature',
         child: []
       },
       {
-        name: "Contact Us",
-        url: "/contact-us",
+        name: 'Intro',
+        url: '/intro',
         child: []
       }
     ];

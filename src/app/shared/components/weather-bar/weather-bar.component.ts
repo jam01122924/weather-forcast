@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { WeatherWidgetComponent } from '../weather-widget/weather-widget.component';
 
 @Component({
   selector: 'app-weather-bar',

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  topTitleLeft: string = 'Jame\'s Demo Website';
-  topTitleRight: string = ''; // For future use
+  public topTitleLeft: string = 'Jame\'s Demo Website';
+  public topTitleRight: string = ''; // For future use
   constructor() { }
 
   ngOnInit() {

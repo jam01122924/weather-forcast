@@ -35,3 +35,13 @@ body {
   background-color: rgba(0, 0, 10, 0.8);
   color: #CCCCCC;
 }
+
+.panel-titles {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.panel-contents {
+  font-size: 1.2em;
+  margin: 20px 0 40px 0;
+}

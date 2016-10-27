@@ -3,16 +3,19 @@ import { HttpService } from './http.service';
 
 @Injectable()
 export class WeatherService {
+  public url: string = 'http://api.openweathermap.org/data/';
+  public version: string = '2.5';
+  public id: string = 'babc5ec07bc782a071b84417b4d11040';
   constructor(private _http: HttpService) { }
 
-  getWeather(city: string, country: string, query?: string) {
-    return this._http.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + (query?query:'') + '&APPID=babc5ec07bc782a071b84417b4d11040');
+  public getWeather(city: string, country: string, query?: string) {
+    return this._http.get(this.url + this.version + '/weather?q=' + city + ',' + country + (query ? query : '') + '&APPID=' + this.id);
   }
 
-  getFutureWeather(city: string, country: string, query?: string) {
-    return this._http.get('http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',' + country + (query?query:'') + '&APPID=babc5ec07bc782a071b84417b4d11040');
+  public getFutureWeather(city: string, country: string, query?: string) {
+    return this._http.get(this.url + this.version + '/forecast?q=' + city + ',' + country + (query ? query : '') + '&APPID=' + this.id);
   }
-  getCity(country) {
+  public getCity(country) {
     return this._http.get('assets/json/city.' + country + '.json');
   }
 }

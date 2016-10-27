@@ -7,6 +7,9 @@
   font-size: 1.4em;
   /*font-family: 'longhai';*/
   font-weight: bolder;
+  position: fixed;
+  top: 0;
+  z-index:5;
 }
 
 .header-top-content{

@@ -1,41 +1,41 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptionsArgs } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class HttpService {
-  headers: Headers;
+  public headers: Headers;
   constructor(private _http: Http) {
   }
 
-  get(url: string, params?: Object) {
-  	//TODO: add params
-		let str = '';
-  	if(params){
-			str = Object.keys(params).map((key) => {
-				return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
-			}).join('&');
-  	}
-		//console.log(str);
-		this.setHeader();
-		return this._http.get(url + (str.length?('?' + str) : ''), { headers: this.headers })
+  public get(url: string, params?: Object) {
+    // TODO: add params
+    let str = '';
+    if (params) {
+      str = Object.keys(params).map((key) => {
+        return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
+      }).join('&');
+    }
+		// console.log(str);
+    this.setHeader();
+    return this._http.get(url + (str.length ? ('?' + str) : ''), { headers: this.headers })
       .map(res => res.json())
       .catch(this.handleError);
   }
 
-  post(url: string, data: string) {
-		this.setHeader();
-		this.headers.append('Content-Type', 'application/json');
-		return this._http.post(url, data, { headers: this.headers }).map(res => res.json());
+  public post(url: string, data: string) {
+    this.setHeader();
+    this.headers.append('Content-Type', 'application/json');
+    return this._http.post(url, data, { headers: this.headers }).map(res => res.json());
   }
 
-  setHeader() {
-		this.headers = new Headers();
-		if (!!localStorage.getItem('token')) {
-			this.headers.append('x-access-token', localStorage.getItem('token'));
-		}
+  public setHeader() {
+    this.headers = new Headers();
+    if (!!localStorage.getItem('token')) {
+      this.headers.append('x-access-token', localStorage.getItem('token'));
+    }
   }
 
   private handleError (error: Response | any) {

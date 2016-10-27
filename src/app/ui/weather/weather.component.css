@@ -10,7 +10,7 @@
     display: none;
 }
 .weather-item {
-  border: 6px solid #999999;
+  border: 3px solid #999999;
   margin: 3%;
 }
 .sun {
@@ -49,12 +49,12 @@
 }
 .cover-container {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #DDDDDD;
   padding: 20px 0;
 }
 .cover-container-dark {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .city {
   font-size: 20px;

@@ -1,0 +1,28 @@
+<div class="feature">
+  <div class="feature-container">
+    <div class="panel panel-default panel-primary">
+      <div class="panel-heading">
+        <div class="panel-heading-container">Features of Weather Forcast Demo</div>
+      </div>
+      <div class="panel-body">
+        <h1 class="panel-titles">Features</h1>
+        <div class="panel-contents">
+          <p>This website is developed with the following features:</p>
+        </div>
+        <div *ngFor="let feature of features">
+          <h2 class="panel-titles">{{feature.title}}</h2>
+          <div class="panel-contents">
+            <div class="row">
+              <div *ngIf="feature.img" class="col-lg-4 col-sm-5 col-xs-12"><img [src]="feature.img"></div>
+              <div class="col-lg-8 col-sm-12 col-xs-12 feature-content">
+                <p *ngFor="let c of feature.content">
+                  {{c}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

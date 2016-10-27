@@ -1,0 +1,32 @@
+.feature-container {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin-bottom: 45px;
+}
+.feature-container::-webkit-scrollbar {
+    display: none;
+}
+.panel {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.panel-heading {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.panel-heading-container {
+  padding-left: 20px;
+}
+.panel-body, .panel-heading-container {
+  margin: auto;
+  max-width: 1280px;
+}
+.panel-contents img {
+  width: 100%;
+  height: auto;
+  min-width: 280px;
+}
+.feature-content {
+  font-size: 1.5em;
+}
