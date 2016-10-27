@@ -9,7 +9,9 @@ Once you have installed NPM, all you will have to do is run the following comman
 `npm install`
 
 ## Runing server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In order to use "ng" command, you will need to install angular-cli in global:
+  `npm install angular-cli -g` 
+Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
